@@ -8,5 +8,7 @@ public class AlarmController {
 	@RequestMapping("/client/alarm/reg")
 	public String aaaaaaa() {
 				
-		return "/WEB-INF/views/client/alarm/reg.jsp"; }
+		return "/WEB-INF/views/client/alarm/reg.jsp";
+		
+	}
 }
