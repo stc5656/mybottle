@@ -176,12 +176,40 @@ ol, ul {
 	margin-top: 55px;
 }
 
-	#goal-container.goal-text{
-		margin-top: 10px;
-		margin-left: 10px;
+	.goal-text{
+		margin-top: -5px;
+		margin-left: -25px;
+	}
+	.graph{
+		margin-top: 30px;
+		background: white;
+		height: 20px;
+		width: 300px;
+		margin-left: 30px;
+		border-radius: 45px;
+		text-align: right;
+	}
+	.graph span{
+		display: block;
+		height: 20px;
+		background: skyblue;
+		border-radius: 45px;
+		line-height: 20px;
+		text-align: right;
+		width: 100%;
+		padding: 0 10px;
+		box-sizing: border-box;
+		color: white;
+		animation: stack 2s 1;
 	}
 
-
+	@keyframes stack {
+	
+		0% {width:0; color: rgba(255, 255, 255 0);}
+		40% {color : rgba(255, 255, 255 1);}
+		100% {width:100;}
+	
+	}
 
 </style>
 
@@ -215,10 +243,10 @@ ol, ul {
 
 		<ul>
 			<li class="menu-label"><a href=""><img src ="/mybottle/resources/images/dry.png"/>물마시기</a></li>
-			<li class="menu-label"><a href="">음료기록</a></li>
-			<li class="menu-label"><a href="">물</a></li>
-			<li class="menu-label"><a href="">알림</a></li>
-			<li class="menu-label"><a href="">설정</a></li>
+			<li class="menu-label"><a href=""><img src ="/mybottle/resources/images/list.png"/>음료기록</a></li>
+			<li class="menu-label"><a href=""><img src ="/mybottle/resources/images/search.png"/>물</a></li>
+			<li class="menu-label"><a href=""><img src ="/mybottle/resources/images/alarm2.png"/>알림</a></li>
+			<li class="menu-label"><a href=""><img src ="/mybottle/resources/images/setting.png"/>설정</a></li>
 		</ul>
 	</section>
 
@@ -227,6 +255,10 @@ ol, ul {
 		<ul>
 			<li class = "goal-text">오늘의 목표</li>
 		</ul>
+		
+		<div class="graph">
+			<span>100%</span>		
+		</div>
 	</section>
 
 </header>
