@@ -7,6 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<%-- <h1>문제 유형 선택 ${test}</h1> --%>
+
 </body>
 </html>

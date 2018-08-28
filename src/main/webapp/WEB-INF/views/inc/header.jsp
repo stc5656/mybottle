@@ -267,6 +267,7 @@ ol, ul {
    window.addEventListener("load", function(event){
       var header = document.querySelector("#header");
       var menuButton = header.querySelector(".menu-button");
+	  var alarmButton = header.querySelector(".alarm-button");
       
       header.onclick = function(e){
          if(e.target.nodeName == "HEADER")
@@ -278,5 +279,14 @@ ol, ul {
          
          e.stopPropagation();
       };
+
+	  alarmButton.onclick = function(){
+		  header.add("#body");
+
+
+	  }
+
+
+
    });
 </script>
