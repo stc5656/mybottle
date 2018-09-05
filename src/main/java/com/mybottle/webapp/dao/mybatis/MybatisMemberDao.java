@@ -5,65 +5,63 @@ import java.util.List;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.mybottle.webapp.dao.AlarmDao;
-import com.mybottle.webapp.entity.Alarm;
+import com.mybottle.webapp.dao.mybatis.mapper.MemberDao;
+import com.mybottle.webapp.entity.Member;
 
 
+public class MybatisMemberDao implements MemberDao {
 
-public class MybatisAlarmDao implements AlarmDao {
-	
 	
 	@Autowired
 	private SqlSession sqlSession;
-
-	@Override
-	public int insert(Alarm Alarm) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public int update(Alarm Alarm) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public int delete(Alarm Alarm) {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	@Override
-	public Alarm get(Alarm Alarm) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public List<Alarm> getList() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public List<Alarm> getList(int page) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public List<Alarm> getList(String field, String query) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public List<Alarm> getList(String field, String query, int page) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 	
+	@Override
+	public int insert(Member member) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int update(Member member) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public int delete(String id) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public Member get(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Member> getList() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Member> getList(int page) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Member> getList(String field, String query) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Member> getList(String field, String query, int page) {
+		// TODO Auto-generated method stub
+		return null;
+	}
 	
 	
 }

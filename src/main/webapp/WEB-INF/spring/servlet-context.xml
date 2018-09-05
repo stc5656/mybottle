@@ -7,6 +7,22 @@
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
 
+	<!-- google Class Bean설정 추가 -->
+	<!-- 클라이언트ID와 보안비밀 세팅-->
+	<!-- <beans:bean id="googleConnectionFactory"
+		class="org.springframework.social.google.connect.GoogleConnectionFactory">
+		<beans:constructor-arg value="150125464011-739ehmurj8nni3hsbo29e3dcr9nq96t3.apps.googleusercontent.com" />
+		<beans:constructor-arg value="vx0Jt30WBpRS3xbWQNFQ4Gl3" />
+	</beans:bean> -->
+	
+	<!-- 승인된 자바스크립트 원본과 승인된 리디렉션 URI -->
+<!-- 	<beans:bean id="googleOAuth2Parameters" class="org.springframework.social.oauth2.OAuth2Parameters">
+		<beans:property name="scope" value="https://www.googleapis.com/auth/plus.login" />
+		<beans:property name="redirectUri" value="http://localhost:8090/login_project/oauth2callback" />
+	</beans:bean> -->
+
+
+
 	<!-- 찾는 범위가 너무 넓기 때문에 컨트롤러의 범위를 지정해준다. -->
 	<context:component-scan base-package="com.newlecture.webapp.controller"/>
 	
