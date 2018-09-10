@@ -1,4 +1,4 @@
-package com.mybottle.webapp.controller;
+package com.mybottle.webapp.controller.member;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

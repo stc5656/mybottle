@@ -2,11 +2,11 @@ package com.mybottle.webapp.controller.client;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
+
 import org.springframework.web.bind.annotation.RequestMapping;
 
-@Controller("studentHomeController")
-@RequestMapping("/student/")
+@Controller("clientHomeController")
+@RequestMapping("/client/")
 public class HomeController {
 
 	/*@Autowired
@@ -16,7 +16,7 @@ public class HomeController {
 	@GetMapping("index")
 	public String index() {
 	
-		return "student/index";		
+		return "client.index";		
 	}
 
 }

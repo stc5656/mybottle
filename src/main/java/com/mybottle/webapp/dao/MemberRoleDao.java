@@ -2,6 +2,8 @@ package com.mybottle.webapp.dao;
 
 import java.util.List;
 
+import com.mybottle.webapp.entity.MemberRole;
+
 public interface MemberRoleDao {	
 
 		int insert(MemberRoleDao memberRole);
@@ -10,4 +12,5 @@ public interface MemberRoleDao {
 		
 		MemberRoleDao get(String id);
 		List<MemberRoleDao> getList();
+		List<MemberRole> getList(String memberId);
 	}

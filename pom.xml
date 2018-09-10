@@ -24,17 +24,15 @@
 			</plugin>
 		</plugins>
 	</build>
-  
-  
-  
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>3.8.1</version>
-      <scope>test</scope>
-      
-      </dependency>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.mybatis/mybatis -->
 		<dependency>
 			<groupId>org.mybatis</groupId>
@@ -48,6 +46,13 @@
 			<artifactId>tomcat-servlet-api</artifactId>
 			<version>9.0.10</version>
 		</dependency>
+	
+		<dependency>
+	    <groupId>javax.mail</groupId>
+	    <artifactId>mail</artifactId>
+	    <version>1.4.7</version>
+		</dependency>	
+
 
 		<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-servlet-api -->
 		<dependency>
@@ -65,9 +70,9 @@
 
 
 		<dependency>
-			<groupId>jstl</groupId>
-			<artifactId>jstl</artifactId>
-			<version>1.2</version>
+			<groupId>com.microsoft.sqlserver</groupId>
+			<artifactId>mssql-jdbc</artifactId>
+			<version>7.0.0.jre8</version>
 		</dependency>
 		<dependency>
 			<groupId>org.apache.tiles</groupId>
@@ -75,15 +80,23 @@
 			<version>3.0.8</version>
 		</dependency>
 		<dependency>
-			<groupId>com.microsoft.sqlserver</groupId>
-			<artifactId>mssql-jdbc</artifactId>
-			<version>7.0.0.jre10</version>
+			<groupId>javax.servlet</groupId>
+			<artifactId>jstl</artifactId>
+			<version>1.2</version>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-web</artifactId>
 			<version>5.0.7.RELEASE</version>
 		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-taglibs -->
+		<dependency>
+		    <groupId>org.springframework.security</groupId>
+		    <artifactId>spring-security-taglibs</artifactId>
+		    <version>5.0.7.RELEASE</version>
+		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-config</artifactId>
@@ -110,15 +123,19 @@
 			<version>5.0.8.RELEASE</version>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.social</groupId>
-			<artifactId>spring-social-google</artifactId>
-			<version>1.0.0.RELEASE</version>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>8.0.12</version>
 		</dependency>
-  </dependencies>
+		<dependency>
+			<groupId>org.springframework.integration</groupId>
+			<artifactId>spring-integration-mail</artifactId>
+			<version>5.0.7.RELEASE</version>
+		</dependency>
+	</dependencies>
 
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
-	</properties>    
-  
+	</properties>
 </project>

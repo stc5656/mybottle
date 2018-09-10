@@ -5,7 +5,7 @@ import java.util.List;
 import org.apache.ibatis.session.SqlSession;
 import org.springframework.beans.factory.annotation.Autowired;
 
-import com.mybottle.webapp.dao.mybatis.mapper.MemberDao;
+import com.mybottle.webapp.dao.MemberDao;
 import com.mybottle.webapp.entity.Member;
 
 
